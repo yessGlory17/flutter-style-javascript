@@ -86,30 +86,28 @@
 // });
 
 
-// import {
-//     Text, TextTypes,Button,Div,Style,
-// } from './fsjs.js';
+import {Text, TextTypes,Button,Div,Style} from './fsjs.js';
 
-// let header = Text({
-//     content:'Heeey',
-//     type:TextTypes.H1
-// });
+let header = Text({
+    content:'Heeey',
+    type:TextTypes.H1
+});
 
-// Div({
-//     childs:[
-//         header,
-//         Button({
-//             text: Text({content:'tıkla',type:TextTypes.H1}),
-//             onClick:()=>console.log('hello world'),
-//             style:Style({
-//                 backgroundColor:'green'
-//             })
-//         })
-//     ],
-//     style:Style({
-//         width:'300px',
-//         height:'200px',
-//         backgroundColor:'red'
-//     })
-// })
+Div({
+    childs:[
+        header,
+        Button({
+            text: Text({content:'Press',type:TextTypes.H1}),
+            onClick:()=>console.log('hello world'),
+            style:Style({
+                backgroundColor:'green'
+            })
+        })
+    ],
+    style:Style({
+        width:'300px',
+        height:'200px',
+        backgroundColor:'red'
+    })
+})
 
