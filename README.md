@@ -5,20 +5,24 @@
 
 - Create a HTML file and put body tag id 'app'
 - Create Javscript file and connect HTML file ('<script src="main.js" tpye="module"></script>')
-- Paste fsjs.min.js cdn
-
+- import fsjs.minjs with cdn
 ### CDN
 
-``` js
-<script src="https://cdn.jsdelivr.net/gh/yessGlory17/flutter-style-javascript/fsjs.min.js"></script>
-
+``` 
+    https://cdn.jsdelivr.net/gh/yessGlory17/flutter-style-javascript/fsjs.min.js
 ```
 
 ### Example
 
 ```js 
 
-import {Text, TextTypes,Button,Div,Style} from './fsjs.js';
+import {
+    Div,
+    Button,
+    Text,
+    TextTypes,
+    Style
+} from 'https://cdn.jsdelivr.net/gh/yessGlory17/flutter-style-javascript/fsjs.min.js';
 
 Div({
     childs:[
