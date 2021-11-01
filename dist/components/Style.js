@@ -1,6 +1,5 @@
-var _Style = (function () {
-    function _Style(_a) {
-        var width = _a.width, height = _a.height, color = _a.color, backgroundColor = _a.backgroundColor, borderRadius = _a.borderRadius, border = _a.border, boxShadow = _a.boxShadow, display = _a.display, flexDirection = _a.flexDirection;
+class _Style {
+    constructor({ width, height, color, backgroundColor, borderRadius, border, boxShadow, display, flexDirection }) {
         this.color = color;
         this.backgroundColor = backgroundColor;
         this.width = width;
@@ -11,7 +10,7 @@ var _Style = (function () {
         this.display = display;
         this.flexDirection = flexDirection;
     }
-    _Style.prototype.load = function (parent) {
+    load(parent) {
         parent.style.color = this.color;
         parent.style.backgroundColor = this.backgroundColor;
         parent.style.width = this.width;
@@ -21,11 +20,7 @@ var _Style = (function () {
         parent.style.boxShadow = this.boxShadow;
         parent.style.display = this.display;
         parent.style.flexDirection = this.flexDirection;
-    };
-    return _Style;
-}());
+    }
+}
 export default _Style;
-export var Style = function (_a) {
-    var width = _a.width, height = _a.height, color = _a.color, backgroundColor = _a.backgroundColor, borderRadius = _a.borderRadius, border = _a.border, display = _a.display, flexDirection = _a.flexDirection;
-    return new _Style({ width: width, height: height, color: color, backgroundColor: backgroundColor, borderRadius: borderRadius, border: border, display: display, flexDirection: flexDirection });
-};
+export const Style = ({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection }) => new _Style({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection });

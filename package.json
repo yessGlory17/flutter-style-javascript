@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "minifyJS": "uglifyjs /core --compress --mangle --warn --output scripts.min.js"
+  },
+  "dependencies": {
+    "minify": "^8.0.3",
+    "uglify-js": "^3.14.2"
+  }
+}
