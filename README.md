@@ -7,6 +7,15 @@
 - Create Javscript file and connect HTML file ('<script src="main.js" tpye="module"></script>')
 - Paste fsjs.min.js cdn
 
+### CDN
+
+``` js
+<script src="https://cdn.jsdelivr.net/gh/yessGlory17/flutter-style-javascript/fsjs.min.js"></script>
+
+```
+
+### Example
+
 ```js 
 
 import {Text, TextTypes,Button,Div,Style} from './fsjs.js';
