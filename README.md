@@ -5,7 +5,7 @@
 ## Usage
 
 - Create a HTML file and put body tag id 'app'
-- Create Javscript file and connect HTML file ('<script src="main.js" tpye="module"></script>')
+- Create Javscript file and connect HTML file ('<script src="main.js" type="module"></script>')
 - import fsjs.minjs with cdn
 ### CDN
 
