@@ -59,7 +59,7 @@ Output
 - [x] Text (H1,H2,H3,H4,H5,H6,p)
 - [x] Style (width,height,border,border-radius,background-color)
 - [x] Picture
-- [ ] Input (text, file, password, etc.)
+- [x] Input (text, file, password, etc.)
 - [ ] Navbar
 - [ ] Bottom Navigation Bar
 - [ ] Animation
