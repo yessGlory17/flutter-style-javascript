@@ -61,6 +61,7 @@ Output
 - [ ] Input (text, file, password, etc.)
 - [ ] Navbar
 - [ ] Bottom Navigation Bar
+- [ ] Animation
 
 ## Library
 - [ ] Main Widget Class
