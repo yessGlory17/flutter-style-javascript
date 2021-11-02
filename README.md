@@ -60,10 +60,25 @@ Output
 - [ ] Image
 - [ ] Input (text, file, password, etc.)
 - [ ] Navbar
+- [ ] Bottom Navigation Bar
+
+## Library
+- [ ] Main Widget Class
+- [ ] Statefull Widget
+- [ ] Stateless Widget
 
 
 ## State
 - [ ] State Pattern Implementation
+
+
+## Examples
+- [ ] Counter App
+- [ ] CRUD App
+
+
+
+
 
 
 
