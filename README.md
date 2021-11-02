@@ -1,5 +1,6 @@
 # flutter-style-javascript
 
+ This project is for experimental purposes only.
 
 ## Usage
 
