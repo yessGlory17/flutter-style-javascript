@@ -1,4 +1,4 @@
-import InputTypes from "../constant/InputTypes.js";
+import InputTypes from "../constant/InputTypes";
 class _Input {
     constructor({ type, style, placeholder, onChange }) {
         this.type = type;

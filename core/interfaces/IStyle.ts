@@ -1,5 +1,6 @@
-import DisplayTypes from "../constant/DisplayTypes";
-import FlexDirectionTypes from "../constant/FlexDirectionTypes";
+import AlignContentTypes from "../constant/style/AlignContentTypes";
+import DisplayTypes from "../constant/style/DisplayTypes";
+import FlexDirectionTypes from "../constant/style/FlexDirectionTypes";
 
 interface IStyle {
     width?:string,
@@ -11,6 +12,7 @@ interface IStyle {
     boxShadow?:string,
     display:DisplayTypes,
     flexDirection:FlexDirectionTypes,
+    alignContent:AlignContentTypes,
 }
 
 export default IStyle;

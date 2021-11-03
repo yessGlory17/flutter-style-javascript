@@ -1,5 +1,5 @@
-import DisplayTypes from "../constant/DisplayTypes";
-import FlexDirectionTypes from "../constant/FlexDirectionTypes";
+import DisplayTypes from "../constant/style/DisplayTypes";
+import FlexDirectionTypes from "../constant/style/FlexDirectionTypes";
 import IStyle from "../interfaces/IStyle";
 class _Style {
   element: HTMLStyleElement;
@@ -13,7 +13,7 @@ class _Style {
   display:DisplayTypes;
   flexDirection:FlexDirectionTypes;
 
-  constructor({ width,height,color, backgroundColor,borderRadius,border,boxShadow,display,flexDirection }: IStyle) {
+  constructor({ width,height,color, backgroundColor,borderRadius,border,boxShadow,display,flexDirection,alignContent }: IStyle) {
     this.color = color;
     this.backgroundColor = backgroundColor;
     this.width = width;
@@ -38,5 +38,5 @@ class _Style {
   }
 }
 export default _Style;
-export const Style = ({width,height, color, backgroundColor,borderRadius,border,display,flexDirection }: IStyle) =>
-  new _Style({width,height, color, backgroundColor,borderRadius,border,display,flexDirection });
+export const Style = ({width,height, color, backgroundColor,borderRadius,border,display,flexDirection, alignContent }: IStyle) =>
+  new _Style({width,height, color, backgroundColor,borderRadius,border,display,flexDirection, alignContent });

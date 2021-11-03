@@ -1,5 +1,5 @@
 class _Style {
-    constructor({ width, height, color, backgroundColor, borderRadius, border, boxShadow, display, flexDirection }) {
+    constructor({ width, height, color, backgroundColor, borderRadius, border, boxShadow, display, flexDirection, alignContent }) {
         this.color = color;
         this.backgroundColor = backgroundColor;
         this.width = width;
@@ -23,4 +23,4 @@ class _Style {
     }
 }
 export default _Style;
-export const Style = ({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection }) => new _Style({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection });
+export const Style = ({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent }) => new _Style({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent });

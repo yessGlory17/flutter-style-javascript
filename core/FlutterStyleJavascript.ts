@@ -6,8 +6,8 @@ import { Picture } from './components/Picture';
 import { Input } from './components/Input';
 //Constants
 import TextTypes from './constant/TextTypes';
-import DisplayTypes from './constant/DisplayTypes';
-import FlexDirectionTypes from './constant/FlexDirectionTypes';
+import DisplayTypes from './constant/style/DisplayTypes';
+import FlexDirectionTypes from './constant/style/FlexDirectionTypes';
 import InputTypes from './constant/InputTypes';
 
 export {
