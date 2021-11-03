@@ -1,5 +1,5 @@
 class _Style {
-    constructor({ width, height, color, backgroundColor, borderRadius, border, boxShadow, display, flexDirection, alignContent }) {
+    constructor({ width, height, color, backgroundColor, borderRadius, border, boxShadow, display, flexDirection, alignContent, alignItems, borderStyle, font, fontFamily, fontWeigth, fontStyle, fontSize, position, zIndex }) {
         this.color = color;
         this.backgroundColor = backgroundColor;
         this.width = width;
@@ -9,6 +9,8 @@ class _Style {
         this.boxShadow = boxShadow;
         this.display = display;
         this.flexDirection = flexDirection;
+        this.alignContent = alignContent;
+        this.alignItems = alignItems;
     }
     load(parent) {
         parent.style.color = this.color;
@@ -23,4 +25,4 @@ class _Style {
     }
 }
 export default _Style;
-export const Style = ({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent }) => new _Style({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent });
+export const Style = ({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent, alignItems, borderStyle, font, fontFamily, fontWeigth, fontStyle, fontSize, position, zIndex }) => new _Style({ width, height, color, backgroundColor, borderRadius, border, display, flexDirection, alignContent, alignItems, borderStyle, font, fontFamily, fontWeigth, fontStyle, fontSize, position, zIndex });
