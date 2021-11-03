@@ -1,5 +1,7 @@
-import DisplayTypes from "../constant/DisplayTypes";
-import FlexDirectionTypes from "../constant/FlexDirectionTypes";
+import AlignContentTypes from "../constant/style/AlignContentTypes";
+import AlignItemsTypes from "../constant/style/AlignItems";
+import DisplayTypes from "../constant/style/DisplayTypes";
+import FlexDirectionTypes from "../constant/style/FlexDirectionTypes";
 import IStyle from "../interfaces/IStyle";
 class _Style {
   element: HTMLStyleElement;
@@ -12,8 +14,18 @@ class _Style {
   boxShadow:string;
   display:DisplayTypes;
   flexDirection:FlexDirectionTypes;
+  alignContent:AlignContentTypes;
+  alignItems:AlignItemsTypes;
+  borderStyle:string;
+  font:string;
+  fontFamily:string;
+  fontWeight:string;
+  fontStyle:string;
+  fontSize:string;
+  position:string;
+  zIndex:string;
 
-  constructor({ width,height,color, backgroundColor,borderRadius,border,boxShadow,display,flexDirection }: IStyle) {
+  constructor({ width,height,color, backgroundColor,borderRadius,border,boxShadow,display,flexDirection,alignContent,alignItems,borderStyle,font,fontFamily,fontWeigth,fontStyle,fontSize,position,zIndex }: IStyle) {
     this.color = color;
     this.backgroundColor = backgroundColor;
     this.width = width;
@@ -23,6 +35,8 @@ class _Style {
     this.boxShadow = boxShadow;
     this.display = display;
     this.flexDirection = flexDirection;
+    this.alignContent = alignContent;
+    this.alignItems = alignItems;
   }
 
   load(parent:HTMLElement) {
@@ -38,5 +52,5 @@ class _Style {
   }
 }
 export default _Style;
-export const Style = ({width,height, color, backgroundColor,borderRadius,border,display,flexDirection }: IStyle) =>
-  new _Style({width,height, color, backgroundColor,borderRadius,border,display,flexDirection });
+export const Style = ({width,height, color, backgroundColor,borderRadius,border,display,flexDirection, alignContent,alignItems,borderStyle,font,fontFamily,fontWeigth,fontStyle,fontSize,position,zIndex }: IStyle) =>
+  new _Style({width,height, color, backgroundColor,borderRadius,border,display,flexDirection, alignContent,alignItems,borderStyle,font,fontFamily,fontWeigth,fontStyle,fontSize,position,zIndex });
